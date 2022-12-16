@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web-design</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper wrapper--main">
+      <header class="header">
+        <div class="logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <nav class="header__nav">
+          <a href="" class="header__link">portfolio</a>
+          <a href="" class="header__link">services</a>
+          <a href="" class="header__link">advantage</a>
+          <a href="" class="header__link">comment</a>
+        </nav>
+        <button class="header__burger-button">
+          <img src="img/burger.svg" alt="">
+        </button>
+      </header>
+      <section class="section-main">
+        <img src="img/section-main/avatar.png" alt="" class="section-main__avatar">
+        <div class="section-main__half-circle"></div>
+        <div class="section-main__text-block">
+          <h1 class="header--primary section-main__header--primary">Modern<br>Web-design</h1>
+          <button class="button section-main__button--1" onclick="showModalWindow()">Submit your application</button>
+        </div>
+        <button class="button section-main__button--2" onclick="showModalWindow()">Submit your application</button>
+      </section>
+      <section class="section-about">
+        <div class="section-about__rectangle"></div>
+        <div class="section-about__text">
+          Hello, my name is Dinara! I am engaged in the creation of design for
+          websites, advertising banners, posts and posters, I carry out the
+          layout of websites.
+        </div>
+        <div class="section-about__rectangle section-about__rectangle--header">
+          <h2 class="header--primary section-about__header--primary">About<br>me</h2>
+        </div>
+      </section>
+      <section class="section-works">
+        <h2 class="header--secondary section-works__header--secondary">My<br>works</h2>
+        <div class="section-works__filter-buttons-block">
+          <button class="button section-works__filter-button section-works__filter-button--active"
+          onclick="sortWorks(event, 'all')">
+            All works
+          </button>
+          <button class="button section-works__filter-button" 
+          onclick="sortWorks(event, 'posters')">
+            Posters
+          </button>
+          <button class="button section-works__filter-button"
+          onclick="sortWorks(event, 'coding')">
+            Site layouts
+          </button>
+        </div>
+        <div class="section-works__list">
+          <div class="section-works__item section-works__item--1 section-works__item--coding">
+            <img src="img/section-works/coding/1.png" alt="">
+          </div>
+          <div class="section-works__item section-works__item--2 section-works__item--coding">
+            <img src="img/section-works/coding/2.png" alt="">
+          </div>
+          <div class="section-works__item section-works__item--3 section-works__item--poster">
+            <img src="img/section-works/posters/1.png" alt="">
+          </div>
+          <div class="section-works__item section-works__item--4 section-works__item--coding">
+            <img src="img/section-works/coding/3.png" alt="">
+          </div>
+          <div class="section-works__item section-works__item--5 section-works__item--poster">
+            <img src="img/section-works/posters/2.png" alt="">
+          </div>
+          <div class="section-works__item section-works__item--6 section-works__item--poster">
+            <img src="img/section-works/posters/3.png" alt="">
+          </div>
+          <div class="section-works__item section-works__item--7 section-works__item--poster">
+            <img src="img/section-works/posters/4.png" alt="">
+          </div>
+          <div class="section-works__item section-works__item--8 section-works__item--poster">
+            <img src="img/section-works/posters/5.png" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="wrapper">
+      <section class="section-pluses">
+        <div class="header-block">
+          <hr class="section-border">
+          <h2 class="header--secondary">Advantage</h2>
+          <hr class="section-border">
+        </div>
+        <div class="section-pluses__list">
+          <div class="section-pluses__item">
+            <p class="section-pluses__number">01</p>
+            <p class="section-pluses__text">Responsibility for work and deadlines</p>
+          </div>
+          <div class="section-pluses__item">
+            <p class="section-pluses__number">02</p>
+            <p class="section-pluses__text">Creating an individual design</p>
+          </div>
+          <div class="section-pluses__item">
+            <p class="section-pluses__number">03</p>
+            <p class="section-pluses__text">Analyzing the target audience</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-services">
+        <div class="header-block">
+          <hr class="section-border">
+          <h2 class="header--secondary">Services</h2>
+          <hr class="section-border">
+        </div>
+        <div class="section-services__list">
+          <div class="section-services__item">
+            <div class="section-services__text">Only design</div>
+            <button class="button section-services__button" onclick="showModalWindow()">Submit your application</button>
+          </div>
+          <div class="section-services__item">
+            <div class="section-services__text">Design and analysis of the target audience</div>
+            <button class="button section-services__button" onclick="showModalWindow()">Submit your application</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-reviews">
+        <div class="header-block">
+          <hr class="section-border">
+          <h2 class="header--secondary">Comment</h2>
+          <hr class="section-border">
+        </div>
+        <div class="section-reviews__slider">
+          <div class="section-reviews__list">
+            <div class="section-reviews__item section-reviews__item--first-order">
+              <img src="img/section-reviews/1.png" alt="" class="section-reviews__avatar">
+              <p class="section-reviews__name">Stiles</p>
+              <p class="section-reviews__text">
+                She quickly and at a high level of quality made a landing
+                 page design for me. Everything was exactly on time,
+                 as agreed, it was a pleasure to work.
+              </p>
+            </div>
+            <div class="section-reviews__item section-reviews__item--active">
+              <img src="img/section-reviews/2.png" alt="" class="section-reviews__avatar">
+              <p class="section-reviews__name">Alex</p>
+              <p class="section-reviews__text">
+                Dinara made a stylish multi-landing design for our company,
+                suggested the structure herself, helped with the materials,
+                even recommended whom we should work with for promotion,
+                texts and the technical part. This is much more than I
+                expected from working with a freelancer.
+              </p>
+            </div>
+            <div class="section-reviews__item section-reviews__item--third-order">
+              <img src="img/section-reviews/3.png" alt="" class="section-reviews__avatar">
+              <p class="section-reviews__name">Maria</p>
+              <p class="section-reviews__text">
+                I want to thank Dinara for the excellent design of my project
+                and emphasize the high level of self-organization of this
+                freelancer. She did everything clearly on time without
+                disruptions and delays, it is very pleasant to work
+                with such a person.
+              </p>
+            </div>
+          </div>
+          <button class="section-reviews__arrow-button section-reviews__arrow-button--left" onclick="swipeReviewsDesktop('left')">
+            <img src="img/left-arrow.svg" alt="">
+          </button>
+          <button class="section-reviews__arrow-button section-reviews__arrow-button--right" onclick="swipeReviewsDesktop('right')">
+            <img src="img/right-arrow.svg" alt="">
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="wrapper wrapper--footer">
+      <footer class="footer">
+        <div class="footer__content--first">
+          <h2 class="header--secondary footer__header--secondary">Do you have any questions?</h2>
+          <button class="button footer__button" onclick="showModalWindow()">Ask a Question</button>
+        </div>
+        <div class="footer__content--second">
+          <div class="footer__social-links-block">
+            <a href="" class="footer__social-link">
+              <img src="img/footer/instagram.svg" alt="">
+              akhmetshina_di
+            </a>
+            <a href="" class="footer__social-link">
+              <img src="img/footer/telegram.svg" alt="">
+              +79965805512
+            </a>
+            <a href="" class="footer__social-link">
+              <img src="img/footer/whatsapp.svg" alt="">
+              +79659456530
+            </a>
+          </div>
+          <div class="logo footer__logo">
+            <img src="img/logo.svg" alt="">
+          </div>
+        </div>
+        <p class="footer__text-copyright">Privacy policy Offer agreement</p>
+      </footer>
+    </div>
+    <div class="modal-window">
+      <div class="modal-window__content">
+        <p class="modal-window__header">Leave a request</p>
+        <form class="modal-window__form">
+          <input type="text" class="modal-window__input" placeholder="Name">
+          <input type="text" class="modal-window__input" placeholder="Email">
+          <input type="text" class="modal-window__input" placeholder="Phone">
+          <button type="reset" class="button modal-window__button" onclick="showModalWindow()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
